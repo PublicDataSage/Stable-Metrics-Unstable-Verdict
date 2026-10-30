@@ -1,0 +1,10 @@
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.13
+matplotlib>=3.9
+statsmodels>=0.14
+pyyaml>=6.0
+requests>=2.32
+folktables>=0.0.12
+openml>=0.15

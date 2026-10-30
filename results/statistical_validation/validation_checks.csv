@@ -1,0 +1,34 @@
+status,check
+PASS,manifest uses one fixed-test partition seed
+PASS,metric test sizes match run manifest
+PASS,all metric seed/model combinations are in the manifest
+PASS,fixed test has invariant n_test by dataset/attribute
+PASS,fixed test has invariant n_group0 by dataset/attribute
+PASS,fixed test has invariant n_group1 by dataset/attribute
+PASS,fixed test has invariant n_min_group by dataset/attribute
+PASS,fixed test has invariant n_positive_group0 by dataset/attribute
+PASS,fixed test has invariant n_positive_group1 by dataset/attribute
+PASS,fixed test has invariant n_negative_group0 by dataset/attribute
+PASS,fixed test has invariant n_negative_group1 by dataset/attribute
+PASS,same number of seeds in each dataset/model
+PASS,fixed surface: 0<=p<=1
+PASS,fixed surface: VI=2p(1-p)
+PASS,fixed surface: valid retraining counts >=2
+PASS,fixed surface: reported p corresponds to integer pass counts
+PASS,fixed surface: region labels consistent with epsilon=0.10
+PASS,Experiment 1 matches surface at primary threshold
+PASS,Exp1 versus Exp3 pass_probability agrees
+PASS,Exp1 versus Exp3 n_retrainings agrees
+PASS,Exp1 versus Exp3 verdict_instability agrees
+PASS,"valid retraining counts constant across t,tau within audit family"
+PASS,original surface: 0<=p<=1
+PASS,original surface: VI=2p(1-p)
+PASS,original surface: valid retraining counts >=2
+PASS,original surface: reported p corresponds to integer pass counts
+PASS,original surface: region labels consistent with epsilon=0.10
+PASS,one-to-one matched surface points
+PASS,audit-family identifiers match grouping keys
+PASS,2VI scaled outcome
+PASS,regression VI identity
+PASS,sd_accuracy repeats within dataset/model blocks
+PASS,saved summary text coefficients align with refits (0 mismatches)

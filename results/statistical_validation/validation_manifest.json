@@ -1,0 +1,16 @@
+{
+  "original_dir": "results",
+  "fixed_dir": "results\\fixed_test_robustness",
+  "epsilon": 0.1,
+  "primary_t": 0.5,
+  "bootstrap_repetitions": 1000,
+  "random_seed": 2027,
+  "checks_failed": 0,
+  "notes": [
+    "This is an observational protocol comparison, not a causal decomposition.",
+    "Tolerance-expanded rows are dependent; audit-family clusters also share datasets and models.",
+    "Dataset-model bootstrap intervals are descriptive with few blocks.",
+    "Wilson intervals are pointwise conditional on independent sampled realizations.",
+    "Boundary-distance predictors are mathematically related to the outcome."
+  ]
+}

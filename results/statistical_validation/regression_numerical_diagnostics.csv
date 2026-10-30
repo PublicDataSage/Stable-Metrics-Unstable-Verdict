@@ -1,0 +1,9 @@
+analysis,clustering,diagnostic,value,warning
+ols_contextual,audit_family,ols_condition_number,3746.309337,high if >1000; depends on feature scaling
+ols_adjusted,audit_family,ols_condition_number,14208.95124,high if >1000; depends on feature scaling
+ols_contextual,dataset_model_cluster,ols_condition_number,3746.309337,high if >1000; depends on feature scaling
+ols_adjusted,dataset_model_cluster,ols_condition_number,14208.95124,high if >1000; depends on feature scaling
+gee_fractional_exchangeable,Exchangeable,fitted_probability_near_0_or_1_share,0.474543708,near-boundary predictions may indicate quasi-separation
+gee_binary_exchangeable,Exchangeable,fitted_probability_near_0_or_1_share,0.8162023695,near-boundary predictions may indicate quasi-separation
+gee_fractional_independence,Independence,fitted_probability_near_0_or_1_share,0.474543708,near-boundary predictions may indicate quasi-separation
+gee_binary_independence,Independence,fitted_probability_near_0_or_1_share,0.8162023695,near-boundary predictions may indicate quasi-separation

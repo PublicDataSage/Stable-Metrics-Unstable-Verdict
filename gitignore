@@ -1,0 +1,80 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Downloaded / raw data
+data/raw/
+data/cache/
+data/downloads/
+
+# Large raw experiment outputs
+results/raw/
+results/checkpoints/
+results/intermediate/
+
+# Local scratch / temporary analysis outputs
+scratch/
+tmp/
+temp/
+
+# Optional generated local artifacts
+*.pkl
+*.joblib
+
+# Keep manuscript-ready outputs committed:
+# results/summaries/
+# results/statistical_models/
+# results/figures/
+
+# If you intentionally want to version specific .pkl or .joblib files,
+# remove the corresponding patterns above or add explicit !exceptions.

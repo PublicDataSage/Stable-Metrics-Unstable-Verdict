@@ -1,0 +1,48 @@
+random_seeds: 100
+datasets:
+  adult:
+    enabled: true
+    max_rows: null
+  compas:
+    enabled: true
+    max_rows: null
+  german:
+    enabled: true
+    max_rows: null
+  acs_income:
+    enabled: true
+    state: CA
+    year: 2018
+    horizon: 1-Year
+    max_rows: 20000
+models:
+  logistic_regression:
+    enabled: true
+  random_forest:
+    enabled: true
+  hist_gradient_boosting:
+    enabled: true
+split:
+  train: 0.7
+  validation: 0.15
+  test: 0.15
+operating_thresholds:
+  start: 0.3
+  stop: 0.7
+  step: 0.05
+audit_tolerances:
+  difference_metrics:
+    start: 0.0
+    stop: 0.3
+    step: 0.01
+  ratio_metric:
+    start: 0.6
+    stop: 1.0
+    step: 0.01
+primary_operating_threshold: 0.5
+analysis:
+  instability_epsilon: 0.1
+  min_group_n: 20
+  min_positive_group_n: 10
+  min_negative_group_n: 10
+output_dir: results

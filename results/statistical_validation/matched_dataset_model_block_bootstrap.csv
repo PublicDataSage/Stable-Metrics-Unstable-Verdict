@@ -1,0 +1,4 @@
+statistic,bootstrap_low_2p5,bootstrap_high_97p5,n_dataset_model_blocks,bootstrap_repetitions
+delta_vi_fixed_minus_original,-0.06844827038,-0.04587414626,12,1000
+delta_unstable_share,-0.1646548254,-0.1020015699,12,1000
+delta_nonzero_share,-0.2311203615,-0.1698395969,12,1000

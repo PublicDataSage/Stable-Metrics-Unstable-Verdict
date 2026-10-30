@@ -168,7 +168,7 @@ git clone https://github.com/PublicDataSage/fairness_audit_stability.git
 cd fairness_audit_stability
 ```
 
-Install dependencies using an available Python environment. **A virtual environment is not required.** On Windows PowerShell:
+Install dependencies using an available Python environment. On Windows PowerShell:
 
 ```powershell
 python -m pip install -r requirements.txt

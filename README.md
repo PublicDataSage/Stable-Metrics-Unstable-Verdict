@@ -23,24 +23,20 @@ Both protocols use overall **70% training / 15% validation / 15% test** proporti
 
 Let `P` denote a modeling pipeline, `pi` an evaluation protocol, `s` a realization, `t` an operational decision threshold, and `tau` an audit tolerance. For a nonnegative fairness-violation statistic `V`, the categorical audit verdict is
 
-\[
-C(P;\pi,s,t,\tau)=\mathbb{I}[V_{s,t}\leq\tau],
-\]
+<img width="245" height="41" alt="image" src="https://github.com/user-attachments/assets/cf653925-b62c-44ad-b5d8-0bd88e83595e" />
+
 
 provided that the audit measurement is defined and satisfies its metric-specific support requirements. The verdict is otherwise undefined. The value `1` means **within the specified tolerance**, not that the model is universally fair.
 
 Let `R_{s,t}` indicate measurement validity. Conditional on positive validity probability, the within-tolerance probability is
 
-\[
-p_{P,\pi}(t,\tau)=\Pr_\pi\!\left(V_{S,t}\leq\tau\mid R_{S,t}=1\right).
-\]
+<img width="319" height="35" alt="image" src="https://github.com/user-attachments/assets/57fe010e-5fda-4e64-bb43-951d000f95e9" />
+
 
 For two independent draws from the same validity-conditioned realization distribution, pairwise verdict instability and audit agreement are
 
-\[
-VI_{P,\pi}(t,\tau)=2p_{P,\pi}(t,\tau)\bigl[1-p_{P,\pi}(t,\tau)\bigr],
-\qquad AA_{P,\pi}(t,\tau)=1-VI_{P,\pi}(t,\tau).
-\]
+<img width="641" height="41" alt="image" src="https://github.com/user-attachments/assets/278a4801-969c-4dfe-901b-574e698b58cc" />
+
 
 For fixed evaluation, these probabilities are conditional on the particular common evaluation cohort. `VI` ranges from `0` (no pairwise disagreement) to `0.5` (maximal disagreement). These are standard Bernoulli probability relationships; the study evaluates their behavior under the specified audit procedures.
 
@@ -271,26 +267,6 @@ The following files support different levels of reproduction:
 | Rerun statistical validation without retraining | Both protocols' `threshold_metrics.csv`, Experiment 1 and 3 outputs; fixed-evaluation Experiment 4 output; original and fixed metadata/manifest where available |
 | Reproduce everything from source | Source scripts, `config.yaml`, dataset definitions and original sources, 100 seeds per model, and the commands above |
 
-## What to commit to Git
-
-**Commit:** source code, `config.yaml`, dependency specifications, README, the five manuscript PDFs, and a compact but sufficient set of processed results. To regenerate the final plots without retraining, retain the four validation inputs identified in the table above. If repository size permits, also retain both protocols' Experiment 1 and Experiment 3 summaries, fixed-evaluation Experiment 4 summaries, regression diagnostics, and run metadata.
-
-**Generally omit:** downloaded raw datasets, per-seed checkpoint folders, Python caches, virtual environments, temporary files, redundant PNG duplicates, and oversized intermediate tables such as `audit_long.csv`. Do not commit generated files that disclose machine-specific paths without reviewing them. If full intermediate data are needed for archival reproducibility, deposit them in a versioned external archive and reference that archive here.
-
-Example `.gitignore` entries:
-
-```gitignore
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.venv/
-venv/
-results/fixed_test_robustness/checkpoints/
-data/
-*.tmp
-```
-
-Avoid adding a blanket `results/` ignore rule if you intend to version processed results. GitHub's regular file limit is 100 MB; very large files require an alternate storage strategy such as Git LFS or a data archive.
 
 ## Statistical interpretation and limitations
 
@@ -303,4 +279,4 @@ Avoid adding a blanket `results/` ignore rule if you intend to version processed
 
 ## Citation and availability
 
-Manuscript: **“Stable Metrics, Unstable Verdicts: Reproducibility in Algorithmic Fairness Auditing.”** 
+Not available yet.

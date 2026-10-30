@@ -303,4 +303,4 @@ Avoid adding a blanket `results/` ignore rule if you intend to version processed
 
 ## Citation and availability
 
-Manuscript: **“Stable Metrics, Unstable Verdicts: Reproducibility in Algorithmic Fairness Auditing.”** Please add final publication metadata, DOI, or archival preprint details here when available. The original datasets are accessible from their respective public providers; the project provides processing and analysis code rather than redistributing those datasets.
+Manuscript: **“Stable Metrics, Unstable Verdicts: Reproducibility in Algorithmic Fairness Auditing.”** 
